@@ -1,0 +1,148 @@
+/*Layout Mobile*/
+@media screen and (max-width: 480px){
+  .barra-de-navegacao, .enviar {
+    width:100%;
+  }
+
+
+}
+/*Fonte;*/
+
+body{
+  font-family: 'Mate SC', serif;
+}
+
+/*Barra de navegacão*/
+
+header{
+  background: #800000;
+}
+
+.barra-de-navegacao{
+  width: 100%;
+}
+
+h1 img{
+  width: 300px;
+}
+
+.barra-de-navegacao > h1 {
+  display: inline-block;
+  margin-left: 7em;
+}
+
+
+nav{
+  position: absolute;
+  top: 8em;
+  right:10em;
+}
+
+nav li{
+  display: inline;
+
+}
+
+nav a {
+  font-size: 1.8em;
+  padding-left: 1em;
+  text-decoration: none;
+  color: #fefefe;
+  transition: 0.8s;
+
+}
+
+nav a:hover{
+  color: #FFE4B5;
+  font-style: italic;
+  font-size: 2em;
+}
+
+/*Página do Garcom*/
+
+.nome-cliente, .numero-mesa{
+  width: 100%;
+  font-size: 1.2em;
+  display: inline-block;
+  margin:2em 0 1em 5em;
+  padding: 0.5em ;
+}
+
+.box-nome{
+  padding-right: 10em;
+}
+
+.opcoes-numero-mesa{
+  font-size: 0.7em;
+  display: inline-block;
+  position: relative;
+}
+
+.pedido, .bebida{
+  font-size: 1.2em;
+  display: inline-block;
+  margin:1em 0 1em 3em;
+  border: 3px solid #800000;
+  padding: 0 1em 1em 1em;
+
+}
+
+.pedido legend, .bebida legend{
+  border: 2px solid #800000;
+
+}
+
+.pedido label, .bebida label{
+  padding-bottom: 1em;
+  border-bottom: 1.5px solid #DCDCDC;
+}
+
+.quantidade{
+  width:2.5em;
+  margin: 0 1em;
+}
+
+.img-pedido, .img-bebida{
+  width: 50px;
+  vertical-align: middle;
+  margin: 0.5em 1em 0.5em 0;
+}
+
+.enviar{
+  display: block;
+  position: relative;
+  left: 20em;
+  margin: 2em 0 3em;
+  width: 25%;
+  padding: 10px 0;
+  background: #800000;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  border-style: none;
+  border-radius: 10px;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  opacity:0.3;
+  transform: scale(1.05);
+}
+
+/*Rodapé*/
+
+footer{
+  background: #2b1d0e;
+  text-align: center;
+  color: #fefefe;
+}
+
+footer img{
+  width: 200px;
+}
+
+footer p{
+  position: relative;
+  bottom: 5em;
+}

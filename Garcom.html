@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Página do garçom</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Raleway:wght@100&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="barra-de-navegacao">
+        <h1><img src="imagens/logo-restaurante.png"></h1>
+
+        <nav>
+          <ul>
+            <li><a href="Cozinha.html">Cozinha</a></li>
+            <li><a href="Copa.html">Copa</a></li>
+            <li><a href="Garcom.html">Página do Garçom</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <form>
+        <fieldset class="nome-cliente">
+          <label for="nome">Nome do cliente:</label>
+        <input type="text" id="nome" class="box-nome">
+        </fieldset>
+        <fieldset class="numero-mesa">
+          <legend>Número da mesa:</legend>
+          <select class="opcoes-numero-mesa">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </fieldset>
+        <fieldset class="pedido">
+            <legend>Pedido:</legend>
+
+            <label for="checkbox-pepperoni"><input type="checkbox" name="pedido" value="pepperoni" id="checkbox-pepperoni"><input name="quantity" type="number" min="0" class="quantidade"><img src="imagens/pepperoni.png" class="img-pedido">Pizza de Pepperoni</label><br>
+
+            <label for="checkbox-marguerita"><input type="checkbox" name="pedido" value="marguerita" id="checkbox-marguerita"><input name="quantity" type="number" min="0" class="quantidade"><img src="imagens/marguerita.png" class="img-pedido">Pizza de Marguerita</label><br>
+
+            <label for="checkbox-frango"><input type="checkbox" name="pedido" value="frango" id="checkbox-frango"><input name="quantity" type="number" min="0" class="quantidade"><img src="imagens/frango.png" class="img-pedido">Pizza de Frango</label><br>
+
+            <label for="radio-nenhum-pedido"><input type="radio" name="pedido" value="nenhum-pedido" id="radio-nenhum-pedido">Nenhum Pedido</label>
+        </fieldset>
+        <fieldset class="bebida">
+              <legend>Bebida:</legend>
+
+              <label for="checkbox-suco"><input type="checkbox" name="bebida" value="suco" id="checkbox-suco"><input name="quantity" type="number" min="0" class="quantidade"><img src="imagens/suco.png" class="img-bebida">Suco de laranja</label><br>
+
+              <label for="checkbox-vinho"><input type="checkbox" name="bebida" value="vinho" id="checkbox-vinho"><input name="quantity" type="number" min="0" class="quantidade"><img src="imagens/vinho.png" class="img-bebida">Vinho tinto</label><br>
+
+              <label for="checkbox-agua"><input type="checkbox" name="bebida" value="agua" id="checkbox-agua"><input name="quantity" type="number" min="0" class="quantidade"><img src="imagens/agua.png" class="img-bebida">Garrafa de água</label><br>
+
+              <label for="radio-nenhuma-bebida"><input type="radio" name="bebida" value="nenhuma-bebida" id="radio-nenhuma-bebida">Nenhum Bebida</label>
+            </fieldset>
+            <input type="submit" value="Enviar pedido" class="enviar">
+          </form>
+    </main>
+    <footer>
+      <img src="imagens/logo-escrito.png">
+      <p class="copyright">&copy; Copyright - Rumo Restaurante - 2021</p>
+    </footer>
+  </body>
+</html>
